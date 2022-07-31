@@ -1,3 +1,6 @@
+<canvas id="bg"></canvas>
+<script type="module" src="/main.js"></script>
+
 <template>
   <div class="text-white">
     <div class="text-center mt-12 max-w-3xl mx-auto">

@@ -1,9 +1,9 @@
 export const state = () => ({
   uploaders: {
-    found: 'found',
-    lost: 'lost'
+    lost: 'lost',
+    found: 'found'
   },
-  selectedUploader: 'catfinder',
+  selectedUploader: 'lost',
 });
 
 export const actions = {};

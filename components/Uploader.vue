@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="text-center mt-4">paste or drag any image or <button class="text-purple-500 cursor-pointer" @click="selectorInput.click()">click here</button> to open dialog</p>
+    <p class="text-center mt-4">paste, drag or <button class="cursor-pointer" @click="selectorInput.click()">browse</button> image</p>
     <div class="flex flex-col items-center mt-2">
       <ImageLog v-for="url in imagesUploaded" :key="url" :url="url" />
     </div>
@@ -92,7 +92,7 @@ export default {
       const selectedUploader = this.$store.state.data.selectedUploader;
 
       let imageUrl;
-      if (selectedUploader === 'imgur') imageUrl = await this.uploadImgur(formData);
+      if (selectedUploader === 'lost') imageUrl = await this.uploadImgur(formData);
 
       if (imageUrl === true) return (this.uploading = false);
 
