@@ -1,0 +1,36 @@
+:root {
+  --blue: #2D4D9D;
+  --ligthblue: #00b0c3;
+  --black: #202632;
+}
+
+body {
+  background: var(--ligthblue);
+  background: linear-gradient(45deg, var(--ligthblue) 38%, var(--blue) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: var(--blue);
+  /* font-size: 3rem; */
+  /* font-weight: bold; */
+  /* text-align: center; */
+  /* margin-top: 1rem; */
+}
+
+p {
+  color: var(--blue);
+  /* font-size: 1.5rem; */
+  /* text-align: center; */
+  /* margin-top: 1rem; */
+}
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}

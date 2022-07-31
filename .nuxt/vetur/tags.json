@@ -1,0 +1,14 @@
+{
+  "BackgroundEffects": {
+    "description": "Auto imported from components/BackgroundEffects.vue"
+  },
+  "ImageLog": {
+    "description": "Auto imported from components/ImageLog.vue"
+  },
+  "Loading": {
+    "description": "Auto imported from components/Loading.vue"
+  },
+  "Uploader": {
+    "description": "Auto imported from components/Uploader.vue"
+  }
+}
