@@ -1,4 +1,3 @@
-import './assets/css/main.css';
 import * as THREE from 'three';
 
 const scene = new THREE.Scene();
