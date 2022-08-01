@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{266:function(n,t,e){"use strict";e.r(t);var o=e(50),component=Object(o.a)({},(function(){var n=this.$createElement;return(this._self._c||n)("img",{staticClass:"w-1/5 pointer-events-none",attrs:{src:"/xomnia_cat_logo.png"}})}),[],!1,null,null,null);t.default=component.exports}}]);

@@ -1,19 +1,17 @@
-<canvas id="bg"></canvas>
-<script type="module" src="/main.js"></script>
-
 <template>
   <div class="text-white">
     <div class="text-center mt-12 max-w-3xl mx-auto">
-      <h1 class="font-semibold text-4xl">CatFinder</h1>
-      <p class="text-lg mt-1">leverage state-of-the-art AI to find your lost cat</p>
-      <select value="none" class="border border-gray-500 rounded-sm p-1 bg-transparent mt-4" @input="selectUploader">
+      <img src="../static/xomnia_cat_logo.png" class="header-image">
+      <h1>CatFinder</h1>
+      <p class="text-lg mt-1">use state-of-the-art AI to find your lost cat</p>
+      <select value="none" class="rounded-sm p-1 bg-transparent mt-4" @input="selectUploader">
         <option v-for="uploader in Object.entries($store.state.data.uploaders)" :key="uploader[0]" :value="uploader[1]">
           {{ uploader[1] }}
         </option>
       </select>
       <Uploader ref="uploader" />
     </div>
-    <BackgroundEffects />
+    <!-- <BackgroundEffects /> -->
   </div>
 </template>
 

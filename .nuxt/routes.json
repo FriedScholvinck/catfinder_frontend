@@ -1,16 +1,8 @@
 [
   {
-    "name": "main",
-    "path": "/main",
-    "component": "/Users/friedscholvinck/catfinder_frontend/pages/main.js",
-    "chunkName": "pages/main",
-    "_name": "_3d2a5fbe"
-  },
-  {
     "name": "index",
     "path": "/",
     "component": "/Users/friedscholvinck/catfinder_frontend/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_7d8bcc8a"
+    "chunkName": "pages/index"
   }
 ]

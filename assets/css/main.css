@@ -1,29 +1,23 @@
 :root {
   --blue: #2D4D9D;
-  --ligthblue: #00b0c3;
+  --lightblue: #00b0c3;
   --black: #202632;
 }
 
 body {
-  background: var(--ligthblue);
-  background: linear-gradient(45deg, var(--ligthblue) 38%, var(--blue) 100%);
+  background: var(--lightblue);
+  background: linear-gradient(45deg, var(--lightblue) 38%, var(--blue) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 h1 {
-  color: var(--ligthblue);
-  /* font-size: 3rem; */
-  /* font-weight: bold; */
-  /* text-align: center; */
-  /* margin-top: 1rem; */
+  color: var(--blue);
+  font-size: 3rem;
 }
 
 p {
   color: var(--blue);
-  /* font-size: 1.5rem; */
-  /* text-align: center; */
-  /* margin-top: 1rem; */
 }
 
 
@@ -33,10 +27,17 @@ button {
   border: none;
   border-radius: 10px;
   padding: 0.5rem;
-  /* font-size: 1rem; */
-  /* font-weight: bold; */
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+
+.header-image {
+  width: 20%;
+  height: 20%;
+  margin: auto;
+  display: block;
+  margin-bottom: 10px;
+  /* height: 20vh; */
 }
 
 .fade-enter-active,
