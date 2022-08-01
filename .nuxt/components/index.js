@@ -1,7 +1,7 @@
-export { default as BackgroundEffects } from '../../components/BackgroundEffects.vue'
-export { default as ImageLog } from '../../components/ImageLog.vue'
-export { default as Loading } from '../../components/Loading.vue'
-export { default as Uploader } from '../../components/Uploader.vue'
+export const BackgroundEffects = () => import('../../components/BackgroundEffects.vue' /* webpackChunkName: "components/background-effects" */).then(c => wrapFunctional(c.default || c))
+export const ImageLog = () => import('../../components/ImageLog.vue' /* webpackChunkName: "components/image-log" */).then(c => wrapFunctional(c.default || c))
+export const Loading = () => import('../../components/Loading.vue' /* webpackChunkName: "components/loading" */).then(c => wrapFunctional(c.default || c))
+export const Uploader = () => import('../../components/Uploader.vue' /* webpackChunkName: "components/uploader" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
