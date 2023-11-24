@@ -37,7 +37,12 @@ cat = st.selectbox(
 #text = st.text_input("Enter a description of the cat", value="", max_chars=1000, key="cat_description")
 
 date = st.date_input("When did you lose/find the cat?", value=None, min_value=datetime(2022,1,1), max_value=datetime.today(), key="date")
-url = 'localhost:5000/predict'
+# get API_URL from secrets
+API_URL = st.secrets["API_URL"]
+headers = {
+    'x-api-key': st.secrets["API_KEY"],
+    'Content-Type': 'application/json'
+}
 
 class TestResponse:
     def __init__(self, status_code, content):
@@ -48,7 +53,7 @@ if st.button("Find similar cats", key="find_similar_cats"):
     if files is not None:
         # call CatFinder API
         try:
-            # r = requests.request("post", url, headers=headers, files=files)
+            # r = requests.request("post", API_URL, headers=headers, files=files)
             
             # create mock response 
             r = TestResponse(200, "This is a mock response")
