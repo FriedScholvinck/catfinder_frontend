@@ -4,7 +4,5 @@ dev:
 
 install:
 	mkdir -p ~/.streamlit/
-	echo "API_PASSWORD=''" > ".streamlit/secrets.toml"
-	python -m venv .venv
-	source .venv/bin/activate
-	pip install -r requirements.txt
+	echo "API_KEY=''" > ".streamlit/secrets.toml"
+	echo "API_URL=''" >> ".streamlit/secrets.toml"
